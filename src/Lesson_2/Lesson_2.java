@@ -35,5 +35,14 @@ public class Lesson_2 {
 
     }
 
+//3. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2;
+    public static void invertMassUmn(String[] args) {
+        int[] mass3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 10};
+        for (int i = 0; i < mass3.length; i++) {
+            if (mass3[i]<6){
+                mass3[i]*=2;
+            }
+        }
+    }
 
 }
