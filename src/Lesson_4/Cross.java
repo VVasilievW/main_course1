@@ -17,18 +17,18 @@ public class Cross {
                 pole [i][j] = EMPTY_DOT;
             }
         }
-
     }
 
     public static void printPole() {
-        for (int i=0; i < size_Y; i++) {
-            System.out.println(i + " ");
+        System.out.print("  ");
+        for (int i=0; i < size_X; i++) {
+            System.out.print( (i + 1) + " ");
         }
         System.out.println();
         for (int i=0; i < size_Y; i++) {
-            System.out.println((i + 1) + " ");
+            System.out.print((i + 1) + " ");
             for (int j = 0; j < size_X; j++) {
-                System.out.println(pole[i][j] + " ");
+                System.out.print(pole[i][j] + " ");
             }
             System.out.println();
         }
@@ -37,7 +37,7 @@ public class Cross {
 
     }
 
-    //
+    // вход
     public static void main(String[] args) {
         initPole();
         printPole();
