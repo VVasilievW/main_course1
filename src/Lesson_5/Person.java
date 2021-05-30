@@ -4,11 +4,11 @@ public class Person {
     public String name;
     public String position;
     public String email;
-    public int phone_number;
+    public String phone_number;
     public int zarplata;
     public int age;
 
-    public Person(String name, String position, String email, String phone_number, String zarplata, String age) {
+    public Person(String name) {
         this.name = name;
         this.position = position;
         this.email = email;
@@ -18,11 +18,11 @@ public class Person {
 
     }
 
-    public Person(String ivanov_ivan, String engener, String email, int phone_number, String s1, String s2) {
+    public Person(String ivanov_ivan, String engener, String email, String phone_number, int zarplata, int age) {
     }
 
     public void info() {
-        System.out.printf("name: $s, position: $s, email: $s, phone_number: $i, zarplata: $i, age: $i,", name, position, email, phone_number, zarplata, age);
+        System.out.printf("name: $s, position: $s, email: $s, phone_number: $s, zarplata: $s, age: $s,", name, position, email, phone_number, zarplata, age);
     }
 
 
